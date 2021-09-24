@@ -9,7 +9,7 @@ services:
   #     - backend
   #   container_name: mongodb
   #   environment:
-  #     - MONGO_INITDB_DATABASE=db_rocketseat_tdd
+  #     - MONGO_INITDB_DATABASE=db_test_tdd
   #     - MONGO_INITDB_ROOT_USERNAME=root
   #     - MONGO_INITDB_ROOT_PASSWORD=)bTZV9ER0wj)fNKEg]Wf%ki8?%qBfwQ;%$eqF[[HWMjC!t/Q+2S~^:RE>wxm;*B
   #   volumes:

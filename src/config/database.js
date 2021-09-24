@@ -5,8 +5,8 @@ require('dotenv').config({
 })
 
 // --
-// --BASE: db_rocketseat_tdd
-// --USER: u_rocketseat_tdd
+// --BASE: db_test_tdd
+// --USER: u_test_tdd
 // --PASS: 1234567890
 // --
 module.exports = {

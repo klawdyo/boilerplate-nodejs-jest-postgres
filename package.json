@@ -1,5 +1,5 @@
 {
-  "name": "rocketseat-login-jwt-tests-jest",
+  "name": "login-jwt-tests-jest",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
