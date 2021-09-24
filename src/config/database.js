@@ -1,14 +1,22 @@
+
+
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
+})
+
 // --
 // --BASE: db_rocketseat_tdd
 // --USER: u_rocketseat_tdd
 // --PASS: 1234567890
 // --
 module.exports = {
-  "username": "u_rocketseat_tdd",
-  "password": '1234567890',
-  "database": "db_rocketseat_tdd",
-  "host": "127.0.0.1",
-  "dialect": "postgres",
+  host: process.env.DB_HOST,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
+  dialect: process.env.DB_DIALECT || "postgres",
+  storage: './__tests__/database.sqlite', // usa a raiz do projeto como padrão
+
   operatorsAliases: false, // desabilita alguns warnings do sequelize
   logging: false, // diminui os logs durante as migrations
   define: {

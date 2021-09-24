@@ -2,6 +2,9 @@
 // - Não configura a porta para que nos testes o servidor não suba na mesma porta
 // - Os testes irão rodar sem ocupar uma porta, executando os métodos diretamente.
 
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
+})
 const express = require('express')
 
 class AppController {
